@@ -15,7 +15,6 @@ def generate_student_data_for_clustering(samples,groups,feature_list):
             stu_obj[feature] = data_row[i]
             i = i + 1
         stu_objs.append(stu_obj)
-    # os.remove("student_data_cluster.pkl")
     pickle.dump(stu_objs, open("student_data_cluster.pkl", "wb"))
 
 
